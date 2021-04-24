@@ -12,12 +12,12 @@ public class Game {
 	}
 
 	private void welcome() {
-		System.out.println("Bienvenido a nuestro pequeño juego: Piedra Papel Tijeras :-D");
+		System.out.println("Bienvenido a nuestro peque�o juego: Piedra Papel Tijeras :-D");
 	}
 
 	private void printHelp() {
 		System.out.println("");
-		System.out.println("Ordenes y comandos válidos para el juego: ");
+		System.out.println("Ordenes y comandos validos para el juego: ");
 		parser.showCommands();
 	}
 
@@ -30,9 +30,9 @@ public class Game {
 		if (who == MoveWords.EMPATE)
 			System.out.println("Es un empate\n");
 		else if (who == MoveWords.GANA)
-			System.out.println("Tu ganas!!! :-D \n");
+			System.out.println("Tu ganas!!!\n");
 		else
-			System.out.println("Tu pierdes!!! :-( \n");
+			System.out.println("Tu pierdes!!!\n");
 	}
 
 	private void printMoves(Move player, Move computer) {
@@ -45,7 +45,7 @@ public class Game {
 		Move pcMove;
 
 		if (move.isUnknown()) {
-			System.out.println("Opción No Válida");
+			System.out.println("Opcion No Valida");
 			printHelp();
 			return true;
 		}
@@ -54,7 +54,7 @@ public class Game {
 			return false;
 		}
 
-		if (move.getMove().equals("AYUDA")) {
+		if (move.getMove().equals("HELP")) {
 			printHelp();
 			return true;
 		}
