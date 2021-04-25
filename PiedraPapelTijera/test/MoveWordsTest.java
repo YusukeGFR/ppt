@@ -8,7 +8,6 @@ public class MoveWordsTest {
 	public void testTijeras() {
 		String primero = new Move("TIJERAS").getMove();
 		String segundo;
-		int result;
 		
 		for (int i = 0; i < 5; i++) {
 			
