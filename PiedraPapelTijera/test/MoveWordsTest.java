@@ -11,8 +11,6 @@ public class MoveWordsTest {
 		
 		for (int i = 0; i < 5; i++) {
 			
-			
-			
 			switch (i) {
 				case 0:  segundo = new Move("TIJERAS").getMove();
 							assertEquals(MoveWords.EMPATE,MoveWords.checkWinner(primero,segundo));
