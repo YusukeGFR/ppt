@@ -21,10 +21,10 @@ public class MoveWordsTest {
 				case 2: 	segundo = new Move("PIEDRA").getMove();
 							assertEquals(MoveWords.PIERDE,MoveWords.checkWinner(primero,segundo));
 				break;
-				case 3: 	segundo = new Move("LAGARTIJA").getMove(); 
+				case 3: 	segundo = new Move("TORITO").getMove(); 
 							assertEquals(MoveWords.GANA,MoveWords.checkWinner(primero,segundo));
 				break;
-				case 4: 	segundo = new Move("SPOCK").getMove(); 
+				case 4: 	segundo = new Move("SEPIA").getMove(); 
 							assertEquals(MoveWords.PIERDE,MoveWords.checkWinner(primero,segundo));
 				break;
 			}
@@ -48,10 +48,10 @@ public class MoveWordsTest {
 				case 2: 	segundo = new Move("PIEDRA").getMove();
 							assertEquals(MoveWords.GANA,MoveWords.checkWinner(primero,segundo));
 				break;
-				case 3: 	segundo = new Move("LAGARTIJA").getMove(); 
+				case 3: 	segundo = new Move("TORITO").getMove(); 
 							assertEquals(MoveWords.PIERDE,MoveWords.checkWinner(primero,segundo));
 				break;
-				case 4: 	segundo = new Move("SPOCK").getMove(); 
+				case 4: 	segundo = new Move("SEPIA").getMove(); 
 							assertEquals(MoveWords.GANA,MoveWords.checkWinner(primero,segundo));
 				break;
 			}
@@ -75,10 +75,10 @@ public class MoveWordsTest {
 				case 2: 	segundo = new Move("PIEDRA").getMove();
 							assertEquals(MoveWords.EMPATE,MoveWords.checkWinner(primero,segundo));
 				break;
-				case 3: 	segundo = new Move("LAGARTIJA").getMove(); 
+				case 3: 	segundo = new Move("TORITO").getMove(); 
 							assertEquals(MoveWords.GANA,MoveWords.checkWinner(primero,segundo));
 				break;
-				case 4: 	segundo = new Move("SPOCK").getMove(); 
+				case 4: 	segundo = new Move("SEPIA").getMove(); 
 							assertEquals(MoveWords.PIERDE,MoveWords.checkWinner(primero,segundo));
 				break;
 			}
@@ -87,7 +87,7 @@ public class MoveWordsTest {
 	
 	@Test
 	public void testLagartija() {
-		String primero = new Move("LAGARTIJA").getMove();
+		String primero = new Move("TORITO").getMove();
 		String segundo;
 		
 		for (int i = 0; i < 5; i++) {
@@ -102,10 +102,10 @@ public class MoveWordsTest {
 				case 2: 	segundo = new Move("PIEDRA").getMove();
 							assertEquals(MoveWords.PIERDE,MoveWords.checkWinner(primero,segundo));
 				break;
-				case 3: 	segundo = new Move("LAGARTIJA").getMove(); 
+				case 3: 	segundo = new Move("TORITO").getMove(); 
 							assertEquals(MoveWords.EMPATE,MoveWords.checkWinner(primero,segundo));
 				break;
-				case 4: 	segundo = new Move("SPOCK").getMove(); 
+				case 4: 	segundo = new Move("SEPIA").getMove(); 
 							assertEquals(MoveWords.GANA,MoveWords.checkWinner(primero,segundo));
 				break;
 			}
@@ -114,7 +114,7 @@ public class MoveWordsTest {
 	
 	@Test
 	public void testSpock() {
-		String primero = new Move("SPOCK").getMove();
+		String primero = new Move("SEPIA").getMove();
 		String segundo;
 		
 		for (int i = 0; i < 5; i++) {
@@ -129,10 +129,10 @@ public class MoveWordsTest {
 				case 2: 	segundo = new Move("PIEDRA").getMove();
 							assertEquals(MoveWords.GANA,MoveWords.checkWinner(primero,segundo));
 				break;
-				case 3: 	segundo = new Move("LAGARTIJA").getMove(); 
+				case 3: 	segundo = new Move("TORITO").getMove(); 
 							assertEquals(MoveWords.PIERDE,MoveWords.checkWinner(primero,segundo));
 				break;
-				case 4: 	segundo = new Move("SPOCK").getMove(); 
+				case 4: 	segundo = new Move("SEPIA").getMove(); 
 							assertEquals(MoveWords.EMPATE,MoveWords.checkWinner(primero,segundo));
 				break;
 			}
